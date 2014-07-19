@@ -2,7 +2,7 @@
 "use strict";
 var request = require('request');
 
-//savge cookies 
+//save cookies 
 request = request.defaults({
     jar: true,
     encoding: 'utf-8',
@@ -10,7 +10,6 @@ request = request.defaults({
         'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
     }
 });
-
 
 var validHostersCached = [];
 var getValidHosters = function (fn) {
@@ -29,22 +28,6 @@ var getValidHosters = function (fn) {
 };
 exports.getValidHosters = getValidHosters;
 
-
-/*{
-    "error":0,
-    "message":"OK",
-    "cookie":"auth=6N75EYF47BLG22RVFS2AGM2DVY; ",
-    "captcha":0,
-    "pin":0
-}*/
-/*
-error = -1: no login / password given
-error = 0: you can find the cookie key containing the cookie (like this: "auth=gpdohdpgfhopgdhkgpfdh; ")
-error = 1: incorrect password / username
-error = 2: suspended / not activated account
-error = 3: too many failed logins
-error = 4: incorrect captcha answer
-*/
 var login = function (user, pass, fn) {
     request({
         url: 'https://real-debrid.com/ajax/login.php?user=' + user + '&pass=' + pass,

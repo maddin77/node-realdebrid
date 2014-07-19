@@ -1,6 +1,6 @@
 {
   "name": "realdebrid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "real-debrid.com API library",
   "author": "Martin Rump <admin@maddin.cc>",
   "homepage": "https://github.com/maddin77/node-realdebrid",
