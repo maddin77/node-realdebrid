@@ -1,0 +1,31 @@
+{
+  "name": "realdebrid",
+  "version": "0.1.0",
+  "description": "real-debrid.com API library",
+  "author": "Martin Rump <admin@maddin.cc>",
+  "homepage": "https://github.com/maddin77/node-realdebrid",
+  "keywords": [
+    "real-debrid.com",
+    "real-debrid",
+    "realdebrid",
+    "real",
+    "debrid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maddin77/node-realdebrid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maddin77/node-realdebrid/issues"
+  },
+  "main": "index",
+  "dependencies": {
+    "request": "^2.37.0"
+  },
+  "scripts": {
+    "test": "mocha --require should --bail --reporter spec test/test.js"
+  },
+  "devDependencies": {
+    "should": "^4.0.4"
+  }
+}

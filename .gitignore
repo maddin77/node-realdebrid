@@ -36,7 +36,8 @@ node_modules
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -63,3 +64,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# =======================
+*.sublime-workspace
+*.sublime-project
+test
