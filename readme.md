@@ -1,6 +1,8 @@
 # node-realdebrid
 A simple API interface for [real-debrid.com](https://real-debrid.com/) in node.js.
 
+[![NPM](https://nodei.co/npm/realdebrid.png?compact=true)](https://nodei.co/npm/realdebrid/)
+
 ## Install
     npm install realdebrid
 
